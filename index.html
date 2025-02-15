@@ -9,6 +9,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
     <title>Portfolio</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .project-photo {
+            width: 150px;
+        }
+        .project-photo img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
 
@@ -72,45 +93,54 @@
             <div class="cells">
                 <div class="cell">
                     <img src="html-logo.webp" alt="HTML logo">
-                    <span>HTML</span>
+                    <a href="https://www.w3schools.com/html/" target="_blank">HTML</a>
                 </div>
                 <div class="cell">
                     <img src="verilog.webp" alt="Verilog logo">
-                    <span>Verilog</span>
+                    <a href="https://www.verilog.com/" target="_blank">Verilog</a>
                 </div>
                 <div class="cell">
                     <img src="pandas.webp" alt="Pandas logo">
-                    <span>Pandas</span>
+                    <a href="https://pandas.pydata.org/" target="_blank">Pandas</a>
                 </div>
                 <div class="cell">
                     <img src="c++.webp" alt="C++ logo">
-                    <span>C++</span>
+                    <a href="https://www.cplusplus.com/" target="_blank">C++</a>
                 </div>
                 <div class="cell">
                     <img src="javascript-logo.webp" alt="Java logo">
-                    <span>Java</span>
+                    <a href="https://www.java.com/" target="_blank">Java</a>
                 </div>
             </div>
         </section>
         <section id="Projects" class="Projects-section">
             <h2>Projects:</h2>
-            <div class="group">
-                <div class="project-details">
-                    <img src="rover.webp" alt="Autonomus rover">
-                    <p>Autonomous Rover</p>
-                    <p> First Year Expo, December 2023</p>
-                </div>
-                <div class="text">
-                    An autonomous rover is being developed to navigate challenging terrains effortlessly. Advanced sensors are utilized to detect and avoid obstacles and potholes, ensuring a smooth and safe journey. Real-time GPS tracking is employed for precise location updates, allowing efficient course monitoring. The rover is designed to autonomously reach predefined destinations without requiring predetermined paths, showcasing unparalleled adaptability for diverse applications. The project's goal is to provide a reliable and efficient solution, particularly in environments where traditional rovers with predefined paths face limitations. This innovation highlights the potential for practical, cost-effective technology to solve real-world challenges in various ways including exploration and surveying.
-                </div>
-                <div class="project-details">
-                    <img src="lora.webp" alt="Revolutionizing Tunnel Safety with LoRa">
-                    <p>Revolutionizing Tunnel Safety with LoRa</p>
-                    <p> Aug 2024 - Aug 2024</p>
-                </div>
-                <div class="text">
-                    to make a simple, cost-effective solution for tunnel workers and miners' safety. Our system is a game-changer for underground safety, monitoring crucial environmental conditions every 150 meters. The moment any issue is detected, our system kicks into action: the miners get immediate alert and real-time updates.</div>
-            </div>
+            <table>
+                <tr>
+                    <th>Project</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td class="project-photo">
+                        <img src="rover.webp" alt="Autonomous rover">
+                        <p>Autonomous Rover</p>
+                        <p>First Year Expo, December 2023</p>
+                    </td>
+                    <td>
+                        An autonomous rover is being developed to navigate challenging terrains effortlessly. Advanced sensors are utilized to detect and avoid obstacles and potholes, ensuring a smooth and safe journey. Real-time GPS tracking is employed for precise location updates, allowing efficient course monitoring. The rover is designed to autonomously reach predefined destinations without requiring predetermined paths, showcasing unparalleled adaptability for diverse applications. The project's goal is to provide a reliable and efficient solution, particularly in environments where traditional rovers with predefined paths face limitations. This innovation highlights the potential for practical, cost-effective technology to solve real-world challenges in various ways including exploration and surveying.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="project-photo">
+                        <img src="lora.webp" alt="Revolutionizing Tunnel Safety with LoRa">
+                        <p>Revolutionizing Tunnel Safety with LoRa</p>
+                        <p>Aug 2024 - Aug 2024</p>
+                    </td>
+                    <td>
+                        To make a simple, cost-effective solution for tunnel workers and miners' safety. Our system is a game-changer for underground safety, monitoring crucial environmental conditions every 150 meters. The moment any issue is detected, our system kicks into action: the miners get immediate alert and real-time updates.
+                    </td>
+                </tr>
+            </table>
         </section>
         <section id="Contacts" class="contact-section">
             <h2>Contact Me:</h2>
@@ -118,7 +148,7 @@
                 <div class="text">
                     I would love to connect and discuss opportunities, collaborations, or any interesting ideas you have in mind. Whether you’re looking for an enthusiastic engineer, a collaborative teammate, or just someone to exchange innovative ideas, feel free to reach out to me!
                 </div>
-                <form >
+                <form>
                     <label for="Name">Name</label>
                     <input type="text" id="Name">
 
@@ -126,10 +156,9 @@
                     <input type="email" id="email">
 
                     <label for="message">Message</label>
-                    <textarea  id="message" cols="30" rows="10"></textarea>
-                    
+                    <textarea id="message" cols="30" rows="10"></textarea>
 
-                    <button type="submit">Send Message </button>
+                    <button type="submit">Send Message</button>
                 </form>
             </div>
         </section>
